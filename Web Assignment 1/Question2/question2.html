@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="question2.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Application Form</h2>
+        
+        <div class="section">
+            <h3>1.1 Personal Information</h3>
+            <div class="form-group">
+                <label>1.1.2 Full Name</label>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <label>1.1.3 Contact Information</label>
+                <input type="tel" placeholder="Phone Number">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <label>1.1.4 Address</label>
+                <input type="text" placeholder="Street">
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="State">
+                <input type="text" placeholder="ZIP Code">
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>1.2 Resume and Cover Letter</h3>
+            <div class="form-group">
+                <label>1.2.1 Upload Resume</label>
+                <input type="file">
+            </div>
+            <div class="form-group">
+                <label>1.2.2 Cover Letter</label>
+                <textarea placeholder="Write your cover letter here (optional)"></textarea>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>1.3 Education</h3>
+            <div class="form-group">
+                <label>1.3.1 Highest Level of Education Attained</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>1.3.2 Name of School/University</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>1.3.3 Major/Area of Study</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>1.3.4 Graduation Year</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>1.4 Employment History</h3>
+            <div class="form-group">
+                <label>1.4.1 Previous Job Titles</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>1.4.2 Company Names</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>1.4.3 Employment Dates</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>1.4.4 Job Responsibilities</label>
+                <textarea placeholder="Describe your job responsibilities"></textarea>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>1.5 Skills</h3>
+            <div class="form-group">
+                <label>Relevant Skills</label>
+                <input type="text" placeholder="e.g., programming languages, software proficiency">
+            </div>
+            <div class="form-group">
+                <label>1.5.1 Certifications</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>1.6 Availability</h3>
+            <div class="form-group">
+                <label>1.6.1 Start Date</label>
+                <input type="date">
+            </div>
+            <div class="form-group">
+                <label>1.6.2 Willingness to Relocate</label>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>1.6.3 Preferred Work Schedule</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>1.7 References</h3>
+            <div class="form-group">
+                <label>1.7.1 Reference Name</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>1.7.2 Reference Contact Information</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>1.7.3 Relationship to Applicant</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>1.8 Additional Questions</h3>
+            <div class="form-group">
+                <label>1.8.1 Why do you want to work for this company?</label>
+                <textarea placeholder="Your answer"></textarea>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>1.9 Consent and Agreement</h3>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox"> I agree to the Terms and Conditions
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox"> I acknowledge the Privacy Policy
+                </label>
+            </div>
+        </div>
+        
+        <button type="submit" id="submitButton">Submit Application</button>
+    </div>
+
+    <br><br><br>
+    
+    <h1>All Job Applications</h1>
+    <table id="applicationTable" style="margin-top:20px; width:100%">
+        <thead>
+            <tr>
+                <th> First Name </th>
+                <th> Last Name </th>
+                <th> Phone No. </th>
+                <th> Email Address </th>
+                <th> Street </th>
+                <th> City </th>
+                <th> University </th>
+                <th> Area of Study </th>
+                <th> Graduation Year </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table content goes here -->
+        </tbody>
+    </table>
+    
+    <script src="question2.js"></script>
+
+</body>
+</html>
